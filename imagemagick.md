@@ -18,10 +18,19 @@ exemple :
 
 #### Modifier pour l'image pour qu'elle possède une largeur/hauteur précise
 
-` convert input.jpg -resize widthxheight output.jpg`
+`convert input.jpg -resize widthxheight output.jpg`
 
 Exemple :
 
 `convert input.jpg -resize 150x150 output.jpg`
+
+#### Remplacer un fond de couleur par un fond transparent dans un png
+
+`convert test.png -transparent white transparent.png`
+
+`convert test.png -background rgba(0,0,0,0) test1.png`
+
+
+
 
 
