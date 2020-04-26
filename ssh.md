@@ -4,6 +4,10 @@
 
 `$ ssh-keygen -b 4096 -t rsa -f ~/.ssh/ma-cle-ssh`
 
+**deduire/afficher la clé publique d'apres la cle privee**
+
+`$ ssh-keygen -y -f ~/.ssh/id_rsa`
+
 **Envoyer sa clé à un serveur**
 
 `$ ssh-copy-id ma-cle-ssh.pub mon-login-distant@serveur-distant`
