@@ -13,6 +13,11 @@
 
     <ctrl-o> / <ctrl-i>
 
+## Maximiser une fenetre verticalement/horizontalement
+
+    <ctrl-w> _
+    <ctrl-w> |
+
 ## Redimensionner les fenetres pour qu'elles aient toutes la même dimension
 
     <ctrl-w> =
@@ -107,10 +112,23 @@ et c'est dans le presse-papier, ctrl-v collera le contenu
 
     :r fichier
 
-## supprimer/changer le contenu entre deux tags
+
+## supprimer/changer ce qui se trouve entre parenthese dans la ligne
+
+Il n'y a pas besoin d'être entre les caractères en question
+
+- tags :
 
     dit
     cit
+
+- le reste
+
+    di}
+    ci]
+    di"
+    ci'
+    ...
 
 ## changer le contenu jusqu'au caractere "
 
@@ -183,4 +201,23 @@ De nouveau un tag ouvrant est affiché dans vim, mettez par exemple `div>` et vo
 `
 
 
+# Plugin Emmet
+
+La *leader key* pour declencher Emmet peut etre modifiée
+Sinon, il s'agit de `<ctrl y>`
+
+**créé un squelette de fichier html**
+
+Dans un fichier .html :
+
+- ecrire un !
+- puis taper `<ctrl-y> ,`
+
+
+**créer un lorem de <n> mots**
+
+Exemple avec 100 mots :
+
+- taper : `lorem100`
+- taper : `ctrl-y ,`
 
