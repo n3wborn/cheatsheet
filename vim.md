@@ -9,6 +9,19 @@
 
     zA
 
+## Autocomplete suivant/precedent
+
+    <ctrl-n>
+    <ctrl-p>
+
+## Autocomplete nom de fichier
+
+    <ctrl-x> <ctrl-f>
+
+## Autocomplete ligne entiere
+
+    <ctrl-x> <ctrl-l>
+
 ## Position précédente/suivante (jumplist)
 
     <ctrl-o> / <ctrl-i>
