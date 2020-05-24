@@ -26,6 +26,14 @@
 
     <ctrl-o> / <ctrl-i>
 
+## Créé un marqueur A (disponible globalement)
+
+    mA
+
+## Saute au marquer A (même depuis un autre fichier)
+
+    'A
+
 ## Maximiser une fenetre verticalement/horizontalement
 
     <ctrl-w> _
