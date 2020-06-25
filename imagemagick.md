@@ -26,12 +26,30 @@ Exemple :
 
 ### Modifier la couleur précise par une autre
 
-`convert test.png -transparent white transparent.png`
+`for filename in *.png; do file=`echo "$filename"` convert $filename -fuzz 100% -fill '#CCCCCC'-opaque "#CFDFE9" ~/Bureau/res/"$filename";done`
 
 ### Idem en modifiant aussi sa taille
 
+`for filename in *.png; do file=`echo "$filename"`;convert $filename -fuzz 100% -fill '#CCCCCC' -resize 24x24 -opaque white $file;done`
 
 ### Faire un negatif d'une photo
 
+`convert photo-identite.jpg -negate photo-identite-negate.jpg`
 
+## Rotate
 
+[ImageMagick - rotate](https://imagemagick.org/Usage/distorts/#rotate_methods)
+
+### Rotation à 180 degrés
+
+`convert -rotate "180" in.jpg out.jpg`
+
+### Rotation à 90 degrés
+
+Vers la droite
+
+`convert -rotate "90" in.jpg out.jpg`
+
+Vers la gauche
+
+`convert -rotate "-90" in.jpg out.jpg`
