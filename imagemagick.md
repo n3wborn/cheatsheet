@@ -7,7 +7,7 @@
 
 [ImageMagick - options de géométrie](https://www.imagemagick.org/script/command-line-processing.php#geometry)
 
-#### Définir une largeur maximale (en gardant les mêmes proportions)
+### Définir une largeur maximale (en gardant les mêmes proportions)
 
 `convert input.jpg -resize [desired width] output.jpg`
 
@@ -16,7 +16,7 @@ exemple :
 `convert input.jpg -resize 100 output.jpg`
 
 
-#### Modifier pour l'image pour qu'elle possède une largeur/hauteur précise
+### Modifier pour l'image pour qu'elle possède une largeur/hauteur précise
 
 `convert input.jpg -resize widthxheight output.jpg`
 
@@ -24,13 +24,14 @@ Exemple :
 
 `convert input.jpg -resize 150x150 output.jpg`
 
-#### Remplacer un fond de couleur par un fond transparent dans un png
+### Modifier la couleur précise par une autre
 
 `convert test.png -transparent white transparent.png`
 
-`convert test.png -background rgba(0,0,0,0) test1.png`
+### Idem en modifiant aussi sa taille
 
 
+### Faire un negatif d'une photo
 
 
 
