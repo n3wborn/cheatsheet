@@ -422,4 +422,62 @@ In you git log, you’ll find that the commit messages contain a “Signed-off-b
 tag. This tag will be read by Github and others to provide useful info about how
 the commit ended up in the code.
 
-That’s all folks!
+
+
+## How to GPG sign commits
+
+
+### Check for existing keys
+
+```bash
+gpg --list-secret-keys --keyid-format LONG
+
+[***]
+------------------------------------
+sec   4096R/3AA5C34371567BD2 2016-03-10 [expires: 2017-03-10]
+uid                          Test 
+ssb   4096R/42B317FD4BA89E7A 2016-03-10
+```
+
+
+### Create new keys
+
+If we don't have keys, or if we prefere to create new ones for git stuff only, you can see [github doc](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key). You will find good ressources for Mac, Windows and Linux users. But if you're impatient and in the last group :
+
+```bash
+gpg --full-generate-key
+```
+
+You will be asked for which kind of key you want (RSA and DSA by default), it's size (1024 < ... < 4096), expiration, mail address and password.
+Once done, you'll find your sec/pub keys in ~/.gpg folder.
+
+
+### Configure git to use a key
+
+```bash
+git config --global user.signingkey 3AA5C34371567BD2
+```
+
+With this git command, git knows which key must be used for signing.
+
+
+## GPG-Sign your commit
+
+Now that git is aware of this key, to sign a commit, an new ```-S``` option is needed. Like this :
+
+```bash
+git commit -S -m your commit message
+```
+
+And your commit, once you typed your password correctly, is now signed with your GPG key ! Now, we are more sure than ever who will be blamed for bugs :p 
+
+
+### Ask git to GPG-Sign commits by default
+
+If you want to sign each commit and don't want to add the appropriate option every time you commit. Maybe the time has come to configure git to do it for you !
+
+```bash
+git config commit.gpgsign true
+```
+
+And your commits will be signed for ever ! ^^
