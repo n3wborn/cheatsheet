@@ -445,7 +445,7 @@ ssb   4096R/42B317FD4BA89E7A 2016-03-10
 If we don't have keys, or if we prefere to create new ones for git stuff only, you can see [github doc](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key). You will find good ressources for Mac, Windows and Linux users. But if you're impatient and in the last group :
 
 ```bash
-gpg --full-generate-key
+gpg --generate-key
 ```
 
 You will be asked for which kind of key you want (RSA and DSA by default), it's size (1024 < ... < 4096), expiration, mail address and password.
