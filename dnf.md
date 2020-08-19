@@ -1,7 +1,7 @@
 # DNF
 
 
-### Commandes de base
+## Commandes de base
 
 **list all installed and available packages**
 
@@ -80,7 +80,7 @@
 `dnf groupremove 'System Tools'`
 
 
-### Repos
+## Repos
 
 **list all repos**
 
@@ -90,8 +90,12 @@
 
 `dnf repolist`
 
+**disable a repo**
 
-### Misc
+`dnf config-manager --disable repo-name`
+
+
+## Misc
 
 **Check which package provides the required function**
 
@@ -128,4 +132,12 @@ with this command, we can see dnf commands have an id. To get info about one of 
 
 `dnf upgrade-minimal`
 
+**system upgrade**
+
+Example from Fedora 31 to 32:
+
+`dnf upgrade --refresh`
+`dnf install dnf-plugin-system-upgrade` (if not already done)
+`dnf system-upgrade download --refresh --releasever=32`
+`dnf system-upgrade reboot`
 
