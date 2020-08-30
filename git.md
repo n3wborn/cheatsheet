@@ -1,4 +1,4 @@
-# git memo
+# GIT
 
 
 ### initialize a project, in an new empty directory
@@ -122,6 +122,12 @@ git branch <new_branch>
 git checkout <new_branch>
 ```
 
+### switch to a new branch tracking a remote one
+
+```bash
+git checkout -b <branch> --track <remote>/<branch>
+```
+
 ### include all the changes made to the <new_branch> ON the master branch
 
 ```bash
@@ -151,12 +157,23 @@ git add <filename>
 ```
 
 
-### delete a branch:
+### delete a branch
 
 ```bash
 git branch -d <branch_name>
 ```
 
+### delete a branch, even unmerged
+
+```bash
+git branch -D <branch_name>
+```
+
+## delete a remote branch
+
+```bash
+git push origin --delete <branch_name>
+```
 
 ### clone a repository
 
@@ -166,13 +183,17 @@ git will call the remote_location as "origin"
 git clone <remote_location> [<clone_name>]
 ```
 
-
 ### see a list of a Git project's remotes:
 
 ```bash
 git remote -v
 ```
 
+### list local and their tracking branch
+
+```bash
+git branch -vv
+```
 
 ### see changes made to a file, every commits about this file only
 
