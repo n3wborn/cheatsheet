@@ -1,4 +1,4 @@
-#SublimeText
+# SublimeText
 
 
 ## Sources
@@ -9,30 +9,42 @@
 
 ### Select content of an element
 
-`CTRL+Shift+A`
+```bash
+CTRL+SHIFT+A
+```
 
 
 ### Wrap selection in HTML tag
 
-`Alt+Shift+W`
+```bash
+ALT+SHIFT+W
+```
 
 
 ### Toggle clipboard
 
-`CTRL+K+V`
+```bash
+CTRL+K+V
+```
 
 
 ### Toggle sidebar
 
-`CTRL+K+B`
+```bash
+CTRL+K+B
+```
 
 
 ### Select line
 
-`CTRL-L`
+```bash
+CTRL-L
+```
 
 
 ### Select duplicates
 
-`CTRL+D`
+```bash
+CTRL+D
+```
 
