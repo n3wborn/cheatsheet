@@ -41,6 +41,13 @@ or
 `SHIFT RIGHT-CLICK`
 
 
+of (linux only ?!)
+
+`ALT SHIFT UP`
+
+`ALT SHIFT DOWN`
+
+
 ### Select duplicates
 
 `CTRL D`
