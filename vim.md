@@ -1,5 +1,10 @@
 # Vim
 
+Ce fichier rassemble plusieurs astuces et permet aussi de garder dans un coin tout ce que je pourrais oublier.
+Les possibilités de Vim sont tellement vastes qu'il faut au moins ça.
+Il est aussi bon de rappeller qu'une aide est toujours donnée à ceux qui le demande.
+Pour ça, vous connaissez certainement la formule magique ;)
+
 ## Ouvrir/fermer tous les replis
 
     zR
@@ -60,6 +65,18 @@
     gU3(fleche droite)
     gU3w(fleche droite)
     gUU
+
+## Connaitre la valeur ASCII du caractere placé sur le curseur
+
+    ga
+
+## Connaitre la position exacte du curseur dans le fichier courant
+
+    g ctrl-g
+
+## Encoder la ligne en rot13
+
+    g??
 
 ## Utiliser le presse-papier du système
 
@@ -160,7 +177,7 @@ Il n'y a pas besoin d'être entre les caractères en question
 **Ce plugin sait utiliser plusieurs "actions"**
 
 - Delete Surroundings `ds`
-- Chance Surroundings `cs`
+- Change Surroundings `cs`
 - You Surround `ys`
 
 **Plusieurs tag-blocks**
